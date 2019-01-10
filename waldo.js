@@ -1,4 +1,3 @@
-
 function findWaldo(arr, found) {
   arr.forEach(function(item, index) {
     if (item === "Waldo") {
@@ -6,7 +5,6 @@ function findWaldo(arr, found) {
     }
   })
 }
-
 
 function actionWhenFound(index) {
   console.log("Found Waldo at index " + index + "!");
