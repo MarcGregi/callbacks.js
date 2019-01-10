@@ -1,5 +1,18 @@
-arr = [10, 5, 2, 9, 1]
+// This task takes three comparative parameters to sort the below object values
 
-console.log(arr.sort(function(a,b){
-    return a - b
-}))
+var students = [
+  { id: 1, name: "bruce",    age: 40 },
+  { id: 2, name: "zoidberg", age: 22 },
+  { id: 3, name: "alex",     age: 22 },
+  { id: 4, name: "alex",     age: 30 }
+
+];
+
+results = students.sort(function(a,b) {
+  if(a.name > b.name) {
+    return a.name > b.name
+  } if(a.name === b.name) {
+    return b.age - a.age
+    }
+})
+console.log(results)
